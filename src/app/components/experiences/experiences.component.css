@@ -1,0 +1,86 @@
+.experience-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+  }
+    
+  .carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .card h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .card h4, .card h6 {
+    color: #555555;
+  }
+  
+  .card ul {
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  
+  .card ul li {
+    line-height: 1.6;
+    color: #555555;
+  }
+  
+  .card p {
+    color: #777777;
+  }
+  
+  .card p strong {
+    color: #2c3e50;
+  }
+  
+  .carousel-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .carousel-buttons button {
+    background: #48cae4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .carousel-buttons button:hover {
+    background: #00aaff;
+  }
+  
+  .carousel-buttons button:disabled {
+    background: #dcdcdc;
+    cursor: not-allowed;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+  }
+  
+  .carousel-track .card {
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+  

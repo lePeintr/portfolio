@@ -1,0 +1,97 @@
+/* Conteneur global de la section Contact */
+.contact {
+    padding: 60px 20px;
+    background-color: #f4f4f9; /* Couleur douce pour le fond */
+    color: #333; /* Couleur sombre pour le texte */
+  }
+  
+  /* Conteneur interne pour limiter la largeur */
+  .contact .container {
+    max-width: 800px; /* Largeur maximale */
+    margin: 0 auto; /* Centré horizontalement */
+    text-align: center;
+  }
+  
+  /* Titre de la section */
+  .contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Couleur sombre élégante */
+  }
+  
+  /* Formulaire de contact */
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white; /* Fond blanc pour le formulaire */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre */
+  }
+  
+  /* Champ individuel */
+  .contact .form-group {
+    text-align: left;
+  }
+  
+  /* Label des champs */
+  .contact .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #2c3e50; /* Couleur élégante */
+  }
+  
+  /* Champ de saisie (input et textarea) */
+  .contact .form-group input,
+  .contact .form-group textarea {
+    width: 100%; /* Largeur complète */
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 5px; /* Coins arrondis */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focus sur les champs */
+  .contact .form-group input:focus,
+  .contact .form-group textarea:focus {
+    border-color: #3498db; /* Bleu clair */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Effet lumineux */
+    outline: none;
+  }
+  
+  /* Bouton d'envoi */
+  .contact button[type="submit"] {
+    background-color: #3498db; /* Bleu clair */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Effet hover sur le bouton */
+  .contact button[type="submit"]:hover {
+    background-color: #2980b9; /* Bleu plus foncé */
+  }
+  
+  /* Message sous le formulaire */
+  .contact p {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #555; /* Couleur douce */
+  }
+  
+  /* Style responsive */
+  @media (max-width: 768px) {
+    .contact form {
+      padding: 20px;
+    }
+  }

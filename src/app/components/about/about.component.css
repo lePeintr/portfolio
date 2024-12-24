@@ -1,0 +1,79 @@
+.about-section {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #eef5ff, #ffffff); /* Dégradé doux bleu clair -> blanc */
+    border-top: 5px solid #48cae4; /* Ligne d'accent turquoise */
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333; /* Texte sombre */
+    text-align: justify;
+    padding: 20px;
+    background: #ffffff; /* Fond blanc cassé */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre forte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.08); /* Zoom léger */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Accentuation de l'ombre */
+}
+
+.about-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-icons .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #48cae4; /* Turquoise */
+    color: #ffffff;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-icons .icon:hover {
+    transform: scale(1.2); /* Agrandissement au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,21 @@
+<section id="experiences" class="experience-section">
+    <h2 class="section-title">Mes Expériences</h2>
+    <div class="carousel">
+      <div class="card">
+        <h3>{{ experiences[currentIndex].title }}</h3>
+        <p>{{ experiences[currentIndex].company }}</p>
+        <p>{{ experiences[currentIndex].date }}</p>
+        <h4>Projet Principal :</h4><h6> {{ experiences[currentIndex].projectTitle }}</h6>
+        <ul>
+          <li *ngFor="let task of experiences[currentIndex].tasks">{{ task }}</li>
+        </ul>
+        <p><strong>Environnement technique :</strong></p>
+        <p>{{ experiences[currentIndex].envTechnique.join(' - ') }}</p>
+        
+      </div>
+      <div class="carousel-buttons">
+        <button (click)="prevSlide()" [disabled]="currentIndex === 0">Précédent</button>
+        <button (click)="nextSlide()" [disabled]="currentIndex === experiences.length - 1">Suivant</button>
+      </div>
+    </div>
+  </section>

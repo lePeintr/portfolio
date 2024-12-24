@@ -1,2 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #34495e; /* Gris bleu */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #48cae4; /* Turquoise */
+    margin: 15px auto 0 auto;
+    border-radius: 2px;
+}
+
