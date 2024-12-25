@@ -77,3 +77,14 @@
     transform: scale(1.2); /* Agrandissement au survol */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Responsive Design pour petits écrans */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Les éléments sont empilés verticalement */
+    }
+
+    .about-image img {
+        max-width: 100%; /* L'image prend toute la largeur */
+    }
+}
